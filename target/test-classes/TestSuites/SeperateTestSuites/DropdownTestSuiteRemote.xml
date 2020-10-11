@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="DropdownTestSuite" verbose="1" parallel="tests">
+
+	<parameter name="os" value="linux"/>
+	<parameter name="node" value="http://localhost:4444"/>
+
+	<test name="DropdownTests-chrome">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.webapp.dropdowntests.DropdownTest" />
+		</classes>
+	</test>
+
+	<test name="DropdownTests-firefox">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="com.webapp.dropdowntests.DropdownTest" />
+		</classes>
+	</test>
+</suite>

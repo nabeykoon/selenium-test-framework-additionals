@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="DropdownTestSuite" verbose="1">
+
+	<test name="DropdownTests">
+		<parameter name="browser" value="FIREFOX"></parameter>
+		<classes>
+			<class name="com.webapp.dropdowntests.DropdownTest" />
+		</classes>
+	</test>
+
+</suite>

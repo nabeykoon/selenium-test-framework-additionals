@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="EditorTestSuite" duration-ms="11038" started-at="2020-08-10T02:01:33 IST" finished-at="2020-08-10T02:01:44 IST">
+    <groups>
+    </groups>
+    <test name="EditorTests" duration-ms="11038" started-at="2020-08-10T02:01:33 IST" finished-at="2020-08-10T02:01:44 IST">
+      <class name="com.webapp.editortests.EditorTests">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.webapp.editortests.EditorTests@78c03f1f]" name="setUp" is-config="true" duration-ms="5922" started-at="2020-08-10T02:01:33 IST" finished-at="2020-08-10T02:01:39 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.webapp.editortests.EditorTests.defaultEditorValueTest()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@2a3591c5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="defaultEditorValueTest()[pri:0, instance:com.webapp.editortests.EditorTests@78c03f1f]" name="defaultEditorValueTest" duration-ms="4168" started-at="2020-08-10T02:01:39 IST" finished-at="2020-08-10T02:01:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- defaultEditorValueTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.webapp.editortests.EditorTests@78c03f1f]" name="tearDown" is-config="true" duration-ms="635" started-at="2020-08-10T02:01:43 IST" finished-at="2020-08-10T02:01:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.webapp.editortests.EditorTests -->
+    </test> <!-- EditorTests -->
+  </suite> <!-- EditorTestSuite -->
+</testng-results>

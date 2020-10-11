@@ -1,0 +1,6 @@
+23:52:56.548 [TestNG-PoolService-3] INFO  negativeLogInTest-FF - Welcome page is opened.
+23:52:56.550 [TestNG-PoolService-3] INFO  negativeLogInTest-FF - Clicking Form Authentication link on Welcome Page
+23:52:56.850 [TestNG-PoolService-4] INFO  negativeLogInTest-FF - [Test negativeLogInTest passed]
+23:52:56.851 [TestNG-PoolService-4] INFO  negativeLogInTest-FF - Close driver
+23:52:56.886 [TestNG-PoolService-2] INFO  negativeLogInTest-FF - [Test negativeLogInTest passed]
+23:52:56.887 [TestNG-PoolService-2] INFO  negativeLogInTest-FF - Close driver

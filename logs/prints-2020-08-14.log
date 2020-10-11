@@ -1,0 +1,7 @@
+03:12:27.278 [main] INFO  AlertsTests - Opening page: http://the-internet.herokuapp.com/
+03:12:29.689 [main] INFO  AlertsTests - Page opened!
+03:12:29.689 [main] INFO  AlertsTests - Clicking JavaScript Alerts link on Welcome Page
+03:12:30.079 [main] INFO  AlertsTests - Clicking on 'Click for JS Alert' button to open alert
+03:12:31.188 [main] INFO  AlertsTests - Alert says: I am a JS Alert
+03:12:31.188 [main] INFO  AlertsTests - Switching to alert and pressing OK
+03:12:31.237 [main] INFO  AlertsTests - Result text: You successfuly clicked an alert

@@ -1,0 +1,13 @@
+com\webapp\windowstests\WindowsTests.class
+com\webapp\checkboxespagetests\CheckboxesTests.class
+com\webapp\horizontalslidertests\HorizontalSliderTests.class
+com\webapp\jserrortests\JSErrorTests.class
+com\webapp\editortests\EditorTests.class
+com\webapp\loginpagetests\NegativeLogInTests.class
+com\webapp\dropdowntests\DropdownTest.class
+com\webapp\keypressestests\KeyPressesTests.class
+com\webapp\uploadtests\UploadTests.class
+com\webapp\loginpagetests\PositiveLogInTests.class
+com\webapp\draganddroptests\DragAndDropTests.class
+com\webapp\alertstests\AlertsTests.class
+com\webapp\hoverstests\HoversTests.class
