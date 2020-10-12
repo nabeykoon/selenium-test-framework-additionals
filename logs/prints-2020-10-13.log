@@ -1,0 +1,15 @@
+01:55:24.164 [jersey-client-async-executor-0] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager is shutting down
+01:55:24.165 [jersey-client-async-executor-0] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager shut down
+01:55:29.169 [main] INFO  selenium-test-framework - result summary {
+	all results=
+		TestResultContainer{
+ testResults=New test [ steps: 1, test name: logInTest, matches: 0, mismatches:0, missing: 0] , URL: https://eyes.applitools.com/app/batches/00000251799766716647/00000251799766716550?accountId=KeyMMzEv7UeKa7wZLSfZIw~~
+ exception = null}
+	passed=1
+	unresolved=0
+	failed=0
+	exceptions=0
+	mismatches=0
+	missing=0
+	matches=0
+}

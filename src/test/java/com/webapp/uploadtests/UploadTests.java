@@ -1,5 +1,6 @@
 package com.webapp.uploadtests;
 
+import com.applitools.eyes.MatchLevel;
 import com.webapp.base.TestUtilities;
 import com.webapp.pages.FileUploaderPage;
 import org.testng.Assert;
@@ -19,7 +20,7 @@ public class UploadTests extends TestUtilities {
 
 		// Select file
 		fileUploaderPage.selectFile(fileName);
-
+		validateWindow (MatchLevel.LAYOUT,"afterSelectFile");
 		// Push upload button
 		fileUploaderPage.pushUploadButton();
 		sleep(2000);

@@ -1,6 +1,8 @@
 package com.webapp.base;
 
 import com.applitools.eyes.EyesRunner;
+import com.applitools.eyes.MatchLevel;
+import com.applitools.eyes.RectangleSize;
 import com.applitools.eyes.TestResultsSummary;
 import com.applitools.eyes.selenium.ClassicRunner;
 import com.applitools.eyes.selenium.Eyes;
@@ -24,9 +26,10 @@ import java.util.Properties;
 public class BaseTest {
     private static final ThreadLocal<WebDriver> drivers = new ThreadLocal<WebDriver> ();
     protected Logger log;
-    //applitools
-    protected static EyesRunner runner;
-    protected static Eyes eyes;
+
+    //applitools Eyes
+    protected EyesRunner runner;
+    protected Eyes eyes;
 
     protected String testSuiteName;
     protected String testName;
@@ -56,13 +59,13 @@ public class BaseTest {
             driver.manage ().window ().maximize ();
             drivers.set (driver);
         }
-
-        initiateEyes();
         //context.setAttribute ("WebDriver", driver);
         context.setAttribute ("browser", browser);
         this.testSuiteName = context.getSuite ().getName ();
         this.testName = testName;
         this.testMethodName = method.getName ();
+
+        initiateEyes();
     }
 
     @AfterMethod(alwaysRun = true)
@@ -72,9 +75,10 @@ public class BaseTest {
         drivers.remove ();
         eyes.abortIfNotClosed();
         TestResultsSummary allTestResults = runner.getAllTestResults();
+        log.info (allTestResults);
     }
 
-    private static void initiateEyes() {
+    private void initiateEyes() {
         Properties props = System.getProperties();
         try {
             props.load(new FileInputStream(new File("src/main/resources/test.properties")));
@@ -84,12 +88,5 @@ public class BaseTest {
         runner = new ClassicRunner();
         eyes = new Eyes(runner);
         eyes.setApiKey(System.getProperty("applitools.api.key"));
-    }
-
-    public void validateWindow(String screenName){
-        eyes.open(getDriver(), "herokuapp", testMethodName);
-        eyes.checkWindow(screenName);
-        eyes.close();
-
     }
 }

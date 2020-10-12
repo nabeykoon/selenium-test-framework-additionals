@@ -1,5 +1,7 @@
 package com.webapp.base;
 
+import com.applitools.eyes.MatchLevel;
+import com.applitools.eyes.RectangleSize;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -82,5 +84,13 @@ public class TestUtilities extends BaseTest {
         LogEntries log = getDriver ().manage ().logs ().get ("browser");
         List<LogEntry> logList = log.getAll ();
         return logList;
+    }
+
+    //Applitools
+    public void validateWindow(Enum Match, String screenName){
+        eyes.open(getDriver(), "herokuapp", testMethodName, new RectangleSize (1920, 1080));
+        eyes.setMatchLevel (MatchLevel.STRICT);
+        eyes.checkWindow(screenName);
+        eyes.close();
     }
 }

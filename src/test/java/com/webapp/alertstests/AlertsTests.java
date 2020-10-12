@@ -27,7 +27,6 @@ public class AlertsTests extends TestUtilities {
         sleep (1000);
         // Get alert text
         String alertMessage = alertsPage.getAlertText ();
-        validateWindow("afterJsalert");
         // Click OK button
         alertsPage.acceptAlert ();
 
