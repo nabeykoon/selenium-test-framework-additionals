@@ -1,0 +1,6 @@
+16:56:22.231 [main] INFO  selenium-test-framework - Driver Hash code of jsPromptTest 1883269062
+16:56:22.245 [main] INFO  selenium-test-framework - Opening page: http://the-internet.herokuapp.com/
+16:56:25.227 [main] INFO  selenium-test-framework - Page opened!
+16:56:25.227 [main] INFO  selenium-test-framework - Clicking JavaScript Alerts link on Welcome Page
+16:56:25.876 [main] INFO  selenium-test-framework - Clicking on 'Click for JS Prompt' button to open alert
+16:56:26.988 [main] INFO  selenium-test-framework - Alert says: I am a JS prompt

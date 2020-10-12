@@ -21,7 +21,7 @@ public class CheckboxesTests extends TestUtilities {
 
         // Select All Checkboxes
         checkboxesPage.selectAllCheckboxes ();
-
+        validateWindow("afterCheckboxSelection");
         // Verify all checkboxes are checked
         Assert.assertTrue (checkboxesPage.areAllCheckboxesChecked (), "Not all checkboxes are checked");
 

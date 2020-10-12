@@ -1,5 +1,5 @@
-22:48:27.172 [TestNG-PoolService-1] INFO  negativeLogInTest-FF - Close driver
-22:48:28.130 [TestNG-PoolService-0] INFO  negativeLogInTest-FF - [Test negativeLogInTest passed]
-22:48:28.131 [TestNG-PoolService-0] INFO  negativeLogInTest-FF - Close driver
-22:48:29.325 [TestNG-test=negativeLogInTest-FF-1] INFO  negativeLogInTest-FF - [Test negativeLogInTest failed]
-22:48:29.325 [main] INFO  negativeLogInTest-FF - [ALL negativeLogInTest-FF FINISHED]
+16:56:26.989 [main] INFO  selenium-test-framework - Typing text into alert and pressing OK
+16:56:28.065 [main] INFO  selenium-test-framework - Result text: You entered: Hello Alert, it's Nadeera here
+16:56:29.068 [main] INFO  selenium-test-framework - [Test jsPromptTest passed]
+16:56:29.069 [main] INFO  selenium-test-framework - Close driver
+16:56:29.828 [main] INFO  selenium-test-framework - [ALL selenium-test-framework FINISHED]

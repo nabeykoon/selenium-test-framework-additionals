@@ -13,12 +13,6 @@
         </classes>
     </test>
 
-    <test name="AlertsTests">
-        <classes>
-            <class name="com.webapp.alertstests.AlertsTests"/>
-        </classes>
-    </test>
-
     <test name="UploadTests">
         <classes>
             <class name="com.webapp.uploadtests.UploadTests"/>
