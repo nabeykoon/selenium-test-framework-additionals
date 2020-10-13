@@ -31,7 +31,7 @@ public class PositiveLogInTests extends TestUtilities {
         // Log in
         SecureAreaPage secureAreaPage = loginPage.logIn("tomsmith", "SuperSecretPassword!");
         takeScreenshotInTest("Secure page opened", getDriver ());
-        validateWindow (MatchLevel.LAYOUT, "afterLogin");
+        validateWindow (MatchLevel.LAYOUT, false);
 
         // Get cookies
         String username = secureAreaPage.getCookie("username");

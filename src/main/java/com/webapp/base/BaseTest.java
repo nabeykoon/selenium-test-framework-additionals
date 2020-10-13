@@ -24,69 +24,60 @@ import java.util.Properties;
 
 
 public class BaseTest {
-    private static final ThreadLocal<WebDriver> drivers = new ThreadLocal<WebDriver> ();
+    private static final ThreadLocal<WebDriver> drivers = new ThreadLocal<WebDriver>();
     protected Logger log;
-
-    //applitools Eyes
-    protected EyesRunner runner;
-    protected Eyes eyes;
+    protected static EyesManager eyesManager;
 
     protected String testSuiteName;
     protected String testName;
     protected String testMethodName;
 
     public WebDriver getDriver() {
-        return drivers.get ();
+        return drivers.get();
     }
 
     @Parameters({"browser", "os", "node"})
     @BeforeMethod(alwaysRun = true)
     public void setUp(Method method, @Optional("chrome") String browser, @Optional String os, @Optional String node, ITestContext context) {
 
-        String testName = context.getCurrentXmlTest ().getName ();
-        log = LogManager.getLogger (testName);
+        String testName = context.getCurrentXmlTest().getName();
+        log = LogManager.getLogger(testName);
 
         if (node != null) {
             try {
-                RemoteWebDriver driver = BrowserDriverFactory.createRemoteDriver (browser, log, os, node);
-                driver.manage ().window ().maximize ();
-                drivers.set (driver);
+                RemoteWebDriver driver = BrowserDriverFactory.createRemoteDriver(browser, log, os, node);
+                driver.manage().window().maximize();
+                drivers.set(driver);
             } catch (MalformedURLException e) {
-                e.printStackTrace ();
+                e.printStackTrace();
             }
         } else {
-            WebDriver driver = BrowserDriverFactory.createDriver (browser, log);
-            driver.manage ().window ().maximize ();
-            drivers.set (driver);
+            WebDriver driver = BrowserDriverFactory.createDriver(browser, log);
+            driver.manage().window().maximize();
+            drivers.set(driver);
         }
-        //context.setAttribute ("WebDriver", driver);
-        context.setAttribute ("browser", browser);
-        this.testSuiteName = context.getSuite ().getName ();
-        this.testName = testName;
-        this.testMethodName = method.getName ();
 
-        initiateEyes();
-    }
-
-    @AfterMethod(alwaysRun = true)
-    public void tearDown() {
-        log.info ("Close driver");
-        getDriver ().quit ();
-        drivers.remove ();
-        eyes.abortIfNotClosed();
-        TestResultsSummary allTestResults = runner.getAllTestResults();
-        log.info (allTestResults);
-    }
-
-    private void initiateEyes() {
         Properties props = System.getProperties();
         try {
             props.load(new FileInputStream(new File("src/main/resources/test.properties")));
         } catch (IOException e) {
             e.printStackTrace();
         }
-        runner = new ClassicRunner();
-        eyes = new Eyes(runner);
-        eyes.setApiKey(System.getProperty("applitools.api.key"));
+        //context.setAttribute ("WebDriver", driver);
+        context.setAttribute("browser", browser);
+        this.testSuiteName = context.getSuite().getName();
+        this.testName = testName;
+        this.testMethodName = method.getName();
+
+        eyesManager = new EyesManager(getDriver(), "heroApp");
+    }
+
+    @AfterMethod(alwaysRun = true)
+    public void tearDown() {
+        log.info("Close driver");
+        getDriver().quit();
+        drivers.remove();
+        eyesManager.abort();
+
     }
 }

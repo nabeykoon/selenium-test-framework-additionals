@@ -20,7 +20,6 @@ public class UploadTests extends TestUtilities {
 
 		// Select file
 		fileUploaderPage.selectFile(fileName);
-		validateWindow (MatchLevel.LAYOUT,"afterSelectFile");
 		// Push upload button
 		fileUploaderPage.pushUploadButton();
 		sleep(2000);
