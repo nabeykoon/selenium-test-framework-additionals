@@ -1,1 +1,5 @@
-01:55:29.171 [main] INFO  selenium-test-framework - [ALL selenium-test-framework FINISHED]
+01:01:46.150 [jersey-client-async-executor-0] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager is shutting down
+01:01:46.152 [jersey-client-async-executor-0] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager shut down
+01:01:46.814 [TestNG-tests-1] INFO  EditorTests123 - [ALL EditorTests123 FINISHED]
+01:01:49.500 [TestNG-tests-3] INFO  CheckboxesTests123 - [ALL CheckboxesTests123 FINISHED]
+01:01:51.155 [TestNG-tests-2] INFO  HorizontalSliderTests123 - [ALL HorizontalSliderTests123 FINISHED]

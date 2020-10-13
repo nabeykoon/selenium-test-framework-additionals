@@ -1,5 +1,6 @@
 package com.webapp.loginpagetests;
 
+import com.applitools.eyes.EyesRunner;
 import com.applitools.eyes.MatchLevel;
 import com.webapp.base.TestUtilities;
 import com.webapp.pages.LoginPage;
@@ -31,7 +32,7 @@ public class PositiveLogInTests extends TestUtilities {
         // Log in
         SecureAreaPage secureAreaPage = loginPage.logIn("tomsmith", "SuperSecretPassword!");
         takeScreenshotInTest("Secure page opened", getDriver ());
-        validateWindow (MatchLevel.LAYOUT, false);
+        eyesManager.validateWindow (MatchLevel.CONTENT, false);
 
         // Get cookies
         String username = secureAreaPage.getCookie("username");

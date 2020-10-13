@@ -1,5 +1,6 @@
 package com.webapp.horizontalslidertests;
 
+import com.applitools.eyes.MatchLevel;
 import com.webapp.base.TestUtilities;
 import com.webapp.pages.HorizontalSliderPage;
 import org.testng.Assert;
@@ -16,7 +17,7 @@ public class HorizontalSliderTests extends TestUtilities {
 		horizontalSliderPage.openPage();
 
 		String value = "3.5";
-
+		eyesManager.validateWindow (MatchLevel.STRICT, false);
 		// Set slider value
 		sleep(2000);
 		horizontalSliderPage.setSliderTo(value);

@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="SmokeTestSuite" verbose="1" parallel="tests" thread-count="8">
+
+<!--
+    <listeners>
+         <listener class-name="com.webapp.base.TestListener"></listener>
+     </listeners>
+-->
+    <test name="EditorTests123">
+        <classes>
+            <class name="com.webapp.editortests.EditorTests"/>
+        </classes>
+    </test>
+
+    <test name="HorizontalSliderTests123">
+        <classes>
+            <class name="com.webapp.horizontalslidertests.HorizontalSliderTests"/>
+        </classes>
+    </test>
+
+    <test name="CheckboxesTests123">
+        <classes>
+            <class name="com.webapp.checkboxespagetests.CheckboxesTests"/>
+        </classes>
+    </test>
+</suite>

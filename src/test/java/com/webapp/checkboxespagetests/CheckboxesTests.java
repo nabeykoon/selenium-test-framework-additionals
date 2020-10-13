@@ -1,5 +1,6 @@
 package com.webapp.checkboxespagetests;
 
+import com.applitools.eyes.MatchLevel;
 import com.webapp.base.TestUtilities;
 import com.webapp.pages.CheckboxesPage;
 import com.webapp.pages.WelcomePage;
@@ -18,7 +19,7 @@ public class CheckboxesTests extends TestUtilities {
 
         // Click on Checkboxes link
         CheckboxesPage checkboxesPage = welcomePage.clickCheckboxesLink ();
-
+        eyesManager.validateWindow (MatchLevel.STRICT, false);
         // Select All Checkboxes
         checkboxesPage.selectAllCheckboxes ();
         // Verify all checkboxes are checked

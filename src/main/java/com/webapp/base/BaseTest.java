@@ -26,7 +26,7 @@ import java.util.Properties;
 public class BaseTest {
     private static final ThreadLocal<WebDriver> drivers = new ThreadLocal<WebDriver>();
     protected Logger log;
-    protected static EyesManager eyesManager;
+    protected EyesManager eyesManager;
 
     protected String testSuiteName;
     protected String testName;
@@ -42,6 +42,12 @@ public class BaseTest {
 
         String testName = context.getCurrentXmlTest().getName();
         log = LogManager.getLogger(testName);
+
+        //context.setAttribute ("WebDriver", driver);
+        context.setAttribute("browser", browser);
+        this.testSuiteName = context.getSuite().getName();
+        this.testName = testName;
+        this.testMethodName = method.getName();
 
         if (node != null) {
             try {
@@ -63,14 +69,11 @@ public class BaseTest {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        //context.setAttribute ("WebDriver", driver);
-        context.setAttribute("browser", browser);
-        this.testSuiteName = context.getSuite().getName();
-        this.testName = testName;
-        this.testMethodName = method.getName();
 
         eyesManager = new EyesManager(getDriver(), "heroApp");
+
     }
+
 
     @AfterMethod(alwaysRun = true)
     public void tearDown() {
@@ -78,6 +81,6 @@ public class BaseTest {
         getDriver().quit();
         drivers.remove();
         eyesManager.abort();
-
+        eyesManager.generateResults ();
     }
 }

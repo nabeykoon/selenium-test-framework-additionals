@@ -21,6 +21,7 @@ public class UploadTests extends TestUtilities {
 		// Select file
 		fileUploaderPage.selectFile(fileName);
 		// Push upload button
+		eyesManager.validateWindow (MatchLevel.CONTENT, false);
 		fileUploaderPage.pushUploadButton();
 		sleep(2000);
 
