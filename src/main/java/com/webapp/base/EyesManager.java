@@ -57,9 +57,9 @@ public class EyesManager {
         eyes.close();
     }
 
-    public static boolean validatePDF(String filepath) throws IOException, InterruptedException {
+    public boolean validatePDF(String filepath) throws IOException, InterruptedException {
         String command = String.format(
-                "java -jar resources/ImageTester.jar -k %s -f %s",
+                "java -jar src/main/resources/ImageTester.jar -k %s -f %s",
                 System.getProperty("applitools.api.key"),
                 filepath);
 
