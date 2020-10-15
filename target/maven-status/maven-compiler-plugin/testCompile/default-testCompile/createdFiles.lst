@@ -3,6 +3,7 @@ com\webapp\checkboxespagetests\CheckboxesTests.class
 com\webapp\horizontalslidertests\HorizontalSliderTests.class
 com\webapp\jserrortests\JSErrorTests.class
 com\webapp\editortests\EditorTests.class
+com\webapp\visualTestPDF\visualTestPDF.class
 com\webapp\loginpagetests\NegativeLogInTests.class
 com\webapp\dropdowntests\DropdownTest.class
 com\webapp\keypressestests\KeyPressesTests.class

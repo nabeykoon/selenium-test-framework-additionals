@@ -1,4 +1,5 @@
-23:40:02.960 [main] INFO  selenium-test-framework - [Starting verifyPDF]
-23:40:13.141 [main] INFO  selenium-test-framework - [Test verifyPDF passed]
-23:40:13.144 [main] INFO  selenium-test-framework - Close driver
-23:40:13.725 [main] INFO  selenium-test-framework - [ALL selenium-test-framework FINISHED]
+23:16:48.389 [jersey-client-async-executor-0] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager is shutting down
+23:16:48.390 [jersey-client-async-executor-0] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager shut down
+23:16:49.086 [TestNG-tests-3] INFO  CheckboxesTests123 - [ALL CheckboxesTests123 FINISHED]
+23:16:49.426 [TestNG-tests-1] INFO  EditorTests123 - [ALL EditorTests123 FINISHED]
+23:16:53.394 [TestNG-tests-2] INFO  HorizontalSliderTests123 - [ALL HorizontalSliderTests123 FINISHED]
