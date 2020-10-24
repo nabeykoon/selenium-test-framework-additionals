@@ -17,7 +17,7 @@ public class HorizontalSliderTests extends TestUtilities {
 		horizontalSliderPage.openPage();
 
 		String value = "3.5";
-		eyesManager.validateWindow (MatchLevel.STRICT, false);
+		//eyesManager.validateWindow (MatchLevel.STRICT, false);
 		// Set slider value
 		sleep(2000);
 		horizontalSliderPage.setSliderTo(value);

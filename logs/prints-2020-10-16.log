@@ -1,0 +1,4 @@
+01:30:15.594 [jersey-client-async-executor-0] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+01:30:15.962 [jersey-client-async-executor-0] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+01:30:15.962 [jersey-client-async-executor-0] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 2][route: {s}->https://eyesapi.applitools.com:443] can be kept alive indefinitely
+01:30:15.962 [jersey-client-async-executor-0] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 2][route: {s}->https://eyesapi.applitools.com:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]

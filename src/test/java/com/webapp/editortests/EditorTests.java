@@ -21,7 +21,7 @@ public class EditorTests extends TestUtilities {
         welcomePage.scrollToBottom ();
         // Click on WYSIWYG Editor link
         EditorPage editorPage = welcomePage.clickWYSIWYGEditorLink ();
-        eyesManager.validateElement (By.id ("mceu_13"));
+        //eyesManager.validateElement (By.id ("mceu_13"));
         // Get default editor text
         String editorText = editorPage.getEditorText ();
 

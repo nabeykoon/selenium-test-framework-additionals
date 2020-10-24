@@ -19,7 +19,8 @@ public class CheckboxesTests extends TestUtilities {
 
         // Click on Checkboxes link
         CheckboxesPage checkboxesPage = welcomePage.clickCheckboxesLink ();
-        eyesManager.validateWindow (MatchLevel.STRICT, false);
+       // eyesManager.validateWindow (MatchLevel.STRICT, false);
+        takeScreenshotInTest ("checkboxScreen", getDriver ());
         // Select All Checkboxes
         checkboxesPage.selectAllCheckboxes ();
         // Verify all checkboxes are checked
