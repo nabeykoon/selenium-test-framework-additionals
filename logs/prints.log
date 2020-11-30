@@ -1,1 +1,7 @@
-15:37:28.063 [TestNG-tests-1] INFO  EditorTests123 - [ALL EditorTests123 FINISHED]
+01:36:48.354 [TestNG-tests-2] INFO  UploadTests - Selecting 'text.txt' file from Files folder
+01:36:48.465 [TestNG-tests-2] INFO  UploadTests - File selected
+01:36:48.465 [TestNG-tests-2] INFO  UploadTests - Clicking on upload button
+01:36:50.973 [TestNG-tests-2] INFO  UploadTests - Uploaded files: text.txt
+01:36:50.973 [TestNG-tests-2] INFO  UploadTests - [Test fileUploadTest passed]
+01:36:50.975 [TestNG-tests-2] INFO  UploadTests - Close driver
+01:36:51.608 [TestNG-tests-2] INFO  UploadTests - [ALL UploadTests FINISHED]

@@ -1,7 +1,0 @@
-02:25:37.689 [main] INFO  EditorTests - [Starting defaultEditorValueTest]
-02:25:37.696 [main] INFO  EditorTests - Opening page: http://the-internet.herokuapp.com/
-02:25:39.644 [main] INFO  EditorTests - Page opened!
-02:25:40.138 [main] INFO  EditorTests - Scrolling to the bottom of the page
-02:25:40.153 [main] INFO  EditorTests - Clicking WYSIWYG Editor link on Welcome Page
-02:25:41.695 [main] INFO  EditorTests - Text from TinyMCE WYSIWYG Editor: Your content goes here.
-02:25:41.698 [main] INFO  EditorTests - [Test defaultEditorValueTest passed]

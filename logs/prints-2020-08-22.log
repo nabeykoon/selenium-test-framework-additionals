@@ -1,6 +1,0 @@
-21:02:35.131 [main] INFO  PositiveLogInTest - Cookie added
-21:02:35.133 [main] INFO  PositiveLogInTest - Executing LogIn with username [tomsmith] and password [SuperSecretPassword!]
-21:02:36.485 [main] INFO  PositiveLogInTest - Getting value of cookie username
-21:02:36.497 [main] INFO  PositiveLogInTest - Username cookie: tomsmith
-21:02:36.497 [main] INFO  PositiveLogInTest - Getting value of cookie rack.session
-21:02:36.504 [main] INFO  PositiveLogInTest - Session cookie: BAh7CkkiD3Nlc3Npb25faWQGOgZFVEkiRTAxZTdiMjA1YTAyZTg5NTMzMTdi%0ANTVjMTUzNDYyYjMxM2U5OTc1N2ViODQwZWFjZTg4MjUzYzNjNjA3ZDRiOTkG%0AOwBGSSIJY3NyZgY7AEZJIiVjNWViNDVmMzA5NGEyMTk2OGJiOGVhZjc4ZTk1%0AZjMxMQY7AEZJIg10cmFja2luZwY7AEZ7B0kiFEhUVFBfVVNFUl9BR0VOVAY7%0AAFRJIi1hZTFkMzY4ODg1NDQ0YjM4ZmQ4NjQzMjE0MGNjMWNjN2RiYjdlNTQ4%0ABjsARkkiGUhUVFBfQUNDRVBUX0xBTkdVQUdFBjsAVEkiLWQ0ZTdkMzNmNGVi%0ANzNiY2U4ZmY3MDdjODBiNjlhYzU3ZWU1YzlmYmMGOwBGSSIKZmxhc2gGOwBG%0AewBJIg11c2VybmFtZQY7AEZJIg10b21zbWl0aAY7AFQ%3D%0A--e4ef90aefb595f812957978f8e0c5d4af0ef7ac7

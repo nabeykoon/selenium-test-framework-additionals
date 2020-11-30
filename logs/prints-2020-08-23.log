@@ -1,6 +1,0 @@
-23:59:44.466 [main] INFO  DropdownTests-firefoxHeadless - Page opened!
-23:59:44.468 [main] INFO  DropdownTests-firefoxHeadless - Clicking Dropdown link on Welcome Page
-23:59:44.994 [main] INFO  DropdownTests-firefoxHeadless - Selecting option 2 from dropdown
-23:59:45.279 [main] INFO  DropdownTests-firefoxHeadless - Option 2 is selected in dropdown
-23:59:45.279 [main] INFO  DropdownTests-firefoxHeadless - [Test optionTwoTest passed]
-23:59:45.280 [main] INFO  DropdownTests-firefoxHeadless - Close driver

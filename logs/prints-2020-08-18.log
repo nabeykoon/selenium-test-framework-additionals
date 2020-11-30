@@ -1,6 +1,0 @@
-01:39:59.082 [TestNG-test=AlertsTests-3] INFO  AlertsTests - Result text: You entered: Hello Alert, it's Nadeera here
-01:39:59.126 [TestNG-test=AlertsTests-1] INFO  AlertsTests - [Test jsAlertTest failed]
-01:39:59.127 [TestNG-test=AlertsTests-1] INFO  AlertsTests - Driver hashcode for screenshot 825887671
-01:39:59.595 [TestNG-test=AlertsTests-1] INFO  AlertsTests - Close driver
-01:40:00.084 [TestNG-test=AlertsTests-3] INFO  AlertsTests - [Test jsPromptTest passed]
-01:40:00.085 [TestNG-test=AlertsTests-3] INFO  AlertsTests - Close driver

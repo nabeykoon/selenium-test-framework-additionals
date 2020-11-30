@@ -1,8 +1,0 @@
-02:14:17.160 [main] INFO  EditorTests - Create driver: chrome
-02:15:50.828 [main] INFO  EditorTests - Create driver: chrome
-02:18:29.312 [main] INFO  EditorTests - [TEST EditorTests STARTED]
-02:18:29.341 [main] INFO  EditorTests - Create driver: chrome
-02:18:34.890 [main] INFO  EditorTests - [Starting defaultEditorValueTest]
-02:18:34.892 [main] INFO  EditorTests - Opening page: http://the-internet.herokuapp.com/
-02:18:39.171 [main] INFO  EditorTests - Page opened!
-02:18:39.172 [main] INFO  EditorTests - Scrolling to the bottom of the page

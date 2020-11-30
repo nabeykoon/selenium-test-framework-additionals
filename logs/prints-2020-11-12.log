@@ -1,0 +1,3 @@
+23:58:22.075 [jersey-client-async-executor-0] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 8][route: {s}->https://eyesapi.applitools.com:443][total kept alive: 2; route allocated: 1 of 2; total allocated: 2 of 20]
+23:58:22.077 [jersey-client-async-executor-0] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager is shutting down
+23:58:22.078 [jersey-client-async-executor-0] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager shut down

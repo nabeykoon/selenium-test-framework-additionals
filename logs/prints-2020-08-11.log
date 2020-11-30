@@ -1,8 +1,0 @@
-23:58:42.637 [main] INFO  EditorTests - Text from TinyMCE WYSIWYG Editor: Your content goes here.
-23:58:42.644 [main] INFO  EditorTests - [Test EditorTests failed]
-23:58:42.647 [main] INFO  EditorTests - Close driver
-23:58:43.258 [main] INFO  EditorTests - [ALL EditorTests FINISHED]
-23:59:28.559 [main] INFO  EditorTests - [TEST EditorTests STARTED]
-23:59:28.588 [main] INFO  EditorTests - Create driver: chrome
-23:59:34.132 [main] INFO  EditorTests - [Starting defaultEditorValueTest]
-23:59:34.134 [main] INFO  EditorTests - Opening page: http://the-internet.herokuapp.com/

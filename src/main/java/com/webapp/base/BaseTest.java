@@ -1,11 +1,6 @@
 package com.webapp.base;
 
-import com.applitools.eyes.EyesRunner;
-import com.applitools.eyes.MatchLevel;
-import com.applitools.eyes.RectangleSize;
-import com.applitools.eyes.TestResultsSummary;
-import com.applitools.eyes.selenium.ClassicRunner;
-import com.applitools.eyes.selenium.Eyes;
+import com.epam.reportportal.testng.ReportPortalTestNGListener;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -20,7 +15,7 @@ import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 import java.util.Properties;
 
-@Listeners({com.webapp.base.TestListener.class})
+@Listeners({com.webapp.base.TestListener.class, ReportPortalTestNGListener.class})
 
 
 public class BaseTest {

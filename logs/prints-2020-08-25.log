@@ -1,6 +1,0 @@
-22:48:25.788 [TestNG-PoolService-3] INFO  negativeLogInTest-FF - [Test negativeLogInTest passed]
-22:48:25.790 [TestNG-PoolService-3] INFO  negativeLogInTest-FF - Close driver
-22:48:25.795 [TestNG-PoolService-2] INFO  negativeLogInTest-FF - [Test negativeLogInTest passed]
-22:48:25.796 [TestNG-PoolService-2] INFO  negativeLogInTest-FF - Close driver
-22:48:26.859 [TestNG-PoolService-1] INFO  negativeLogInTest-FF - [Test negativeLogInTest failed]
-22:48:26.860 [TestNG-PoolService-1] INFO  negativeLogInTest-FF - Driver hashcode for screenshot 1230088994

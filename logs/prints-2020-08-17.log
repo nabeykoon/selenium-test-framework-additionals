@@ -1,6 +1,0 @@
-23:56:47.973 [TestNG-PoolService-1] INFO  negativeLogInTest-FF - Close driver
-23:56:48.003 [TestNG-PoolService-4] INFO  negativeLogInTest-CH - [Test negativeLogInTest passed]
-23:56:48.004 [TestNG-PoolService-4] INFO  negativeLogInTest-CH - Close driver
-23:56:48.259 [TestNG-PoolService-0] INFO  negativeLogInTest-CH - [Test negativeLogInTest passed]
-23:56:48.260 [TestNG-PoolService-0] INFO  negativeLogInTest-CH - Close driver
-23:56:48.950 [TestNG-tests-2] INFO  negativeLogInTest-FF - [ALL negativeLogInTest-FF FINISHED]

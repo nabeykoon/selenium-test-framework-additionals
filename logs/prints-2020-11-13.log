@@ -1,0 +1,6 @@
+00:12:10.985 [TestNG-tests-2] INFO  UploadTests - Driver Hash code of fileUploadTest 1522661569
+00:12:10.987 [TestNG-tests-2] INFO  UploadTests - Opening page: http://the-internet.herokuapp.com/upload
+00:12:15.014 [TestNG-tests-2] INFO  UploadTests - Page opened!
+00:12:15.014 [TestNG-tests-2] INFO  UploadTests - Selecting 'text.txt' file from Files folder
+00:12:15.121 [TestNG-tests-2] INFO  UploadTests - File selected
+00:12:15.121 [TestNG-tests-2] INFO  UploadTests - Clicking on upload button

@@ -1,7 +1,0 @@
-23:49:13.503 [TestNG-tests-3] INFO  UploadTests - File selected
-23:49:13.505 [TestNG-tests-3] INFO  UploadTests - Clicking on upload button
-23:49:14.382 [TestNG-tests-2] INFO  AlertsTests - Alert says: I am a JS prompt
-23:49:14.382 [TestNG-tests-2] INFO  AlertsTests - Typing text into alert and pressing OK
-23:49:15.441 [TestNG-tests-2] INFO  AlertsTests - Result text: You entered: Hello Alert, it's Nadeera here
-23:49:15.927 [TestNG-tests-3] INFO  UploadTests - Uploaded files: text.txt
-23:49:15.927 [TestNG-tests-3] INFO  PositiveLogInTest123 - [Test fileUploadTest passed]

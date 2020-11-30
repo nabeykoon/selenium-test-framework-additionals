@@ -1,3 +1,7 @@
-15:37:23.056 [jersey-client-async-executor-0] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 5][route: {s}->https://eyesapi.applitools.com:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
-15:37:23.059 [jersey-client-async-executor-0] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager is shutting down
-15:37:23.059 [jersey-client-async-executor-0] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager shut down
+15:37:28.063 [TestNG-tests-1] INFO  EditorTests123 - [ALL EditorTests123 FINISHED]
+16:00:24.675 [main] INFO  EditorTests - [TEST EditorTests STARTED]
+16:00:24.696 [main] INFO  EditorTests - Create driver: chrome
+16:00:30.383 [main] INFO  EditorTests - [Starting defaultEditorValueTest]
+16:00:30.389 [main] INFO  EditorTests - Opening page: http://the-internet.herokuapp.com/
+16:00:39.329 [main] INFO  EditorTests - Page opened!
+16:00:39.329 [main] INFO  EditorTests - Scrolling to the bottom of the page

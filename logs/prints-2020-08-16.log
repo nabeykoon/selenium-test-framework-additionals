@@ -1,6 +1,0 @@
-23:59:44.757 [TestNG-PoolService-0] INFO  negativeLogInTest-FF - Close driver
-23:59:44.817 [TestNG-PoolService-1] INFO  com.webapp.base.TestListener - [Test negativeLogInTest failed]
-23:59:44.971 [TestNG-PoolService-1] INFO  com.webapp.base.TestListener - [Test negativeLogInTest failed]
-23:59:47.425 [TestNG-tests-2] INFO  com.webapp.base.TestListener - [Test negativeLogInTest failed]
-23:59:47.426 [TestNG-tests-2] INFO  com.webapp.base.TestListener - [ALL null FINISHED]
-23:59:48.971 [TestNG-tests-1] INFO  com.webapp.base.TestListener - [Test negativeLogInTest failed]
