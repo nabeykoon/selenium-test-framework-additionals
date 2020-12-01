@@ -1,6 +1,6 @@
-01:36:45.593 [TestNG-tests-2] INFO  UploadTests - [Starting fileUploadTest]
-01:36:45.595 [TestNG-tests-2] INFO  UploadTests - Starting fileUploadTest #3 for text.txt
-01:36:45.595 [TestNG-tests-2] INFO  UploadTests - Thread id of fileUploadTest 31
-01:36:45.595 [TestNG-tests-2] INFO  UploadTests - Driver Hash code of fileUploadTest 460812271
-01:36:45.595 [TestNG-tests-2] INFO  UploadTests - Opening page: http://the-internet.herokuapp.com/upload
-01:36:48.354 [TestNG-tests-2] INFO  UploadTests - Page opened!
+23:36:34.828 [TestNG-tests-2] INFO  UploadTests - Thread id of fileUploadTest 31
+23:36:34.830 [TestNG-tests-2] INFO  UploadTests - Driver Hash code of fileUploadTest 1404341152
+23:36:34.830 [TestNG-tests-2] INFO  UploadTests - Opening page: http://the-internet.herokuapp.com/upload
+23:36:37.321 [TestNG-tests-2] INFO  UploadTests - Page opened!
+23:36:37.322 [TestNG-tests-2] INFO  UploadTests - Selecting 'text.txt' file from Files folder
+23:36:37.421 [TestNG-tests-2] INFO  UploadTests - File selected

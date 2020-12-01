@@ -49,7 +49,7 @@ public class PositiveLogInTests extends TestUtilities {
                 "logOutButton is not visible.");
 
         // Successful log in message
-        String expectedSuccessMessage = "You logged into a secure area!";
+        String expectedSuccessMessage = "You logged into a seure area!";
         String actualSuccessMessage = secureAreaPage.getSuccessMessageText();
         Assert.assertTrue(actualSuccessMessage.contains(expectedSuccessMessage),
                 "actualSuccessMessage does not contain expectedSuccessMessage\nexpectedSuccessMessage: "

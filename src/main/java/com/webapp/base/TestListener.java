@@ -18,6 +18,9 @@ import org.testng.ITestResult;
 import java.io.File;
 import java.io.IOException;
 
+import static com.webapp.utils.TimeUtils.getSystemTime;
+import static com.webapp.utils.TimeUtils.getTodaysDate;
+
 public class TestListener implements ITestListener {
 
     Logger log;
@@ -59,7 +62,15 @@ public class TestListener implements ITestListener {
 
     protected String takeScreenshotDuringFailure(String testName, String testMethodName, WebDriver driver) {
         File scrFile = ((TakesScreenshot) driver).getScreenshotAs (OutputType.FILE);
-        String path = System.getProperty ("user.dir") + "\\Extent Reports\\Screenshots\\" + testName + "-" + testMethodName + ".png";
+        String path = System.getProperty ("user.dir")
+                + File.separator + File.separator + "test-output"
+                + File.separator + File.separator + "screenshots"
+                + File.separator + File.separator + getTodaysDate ()
+                + File.separator + File.separator + testSuiteName
+                + File.separator + File.separator + testName
+                + File.separator + File.separator + "onTestFail"
+                + File.separator + File.separator +
+                getSystemTime () + "-" + testMethodName + ".png";
         try {
             FileUtils.copyFile (scrFile, new File (path));
         } catch (IOException e) {
