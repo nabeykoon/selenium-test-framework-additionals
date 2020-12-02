@@ -1,4 +1,6 @@
-01:00:04.212 [main] INFO  PositiveLogInTest - [Test logInTest failed]
-01:00:04.218 [main] INFO  PositiveLogInTest - Driver hashcode for screenshot 257684104
-01:00:04.604 [main] INFO  PositiveLogInTest - Close driver
-01:00:05.222 [main] INFO  PositiveLogInTest - [ALL PositiveLogInTest FINISHED]
+00:29:52.305 [TestNG-PoolService-4] INFO  negativeLogInTest-CH - [Test negativeLogInTest passed]
+00:29:52.309 [TestNG-PoolService-4] INFO  negativeLogInTest-CH - Close driver
+00:29:52.833 [TestNG-tests-2] INFO  negativeLogInTest-FF - [ALL negativeLogInTest-FF FINISHED]
+00:29:53.014 [TestNG-PoolService-1] INFO  negativeLogInTest-CH - [Test negativeLogInTest passed]
+00:29:53.016 [TestNG-PoolService-1] INFO  negativeLogInTest-CH - Close driver
+00:29:53.728 [TestNG-tests-1] INFO  negativeLogInTest-CH - [ALL negativeLogInTest-CH FINISHED]

@@ -4,6 +4,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
+import com.epam.reportportal.message.ReportPortalMessage;
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -51,17 +52,9 @@ public class TestListener implements ITestListener {
         //WebDriver driver=(WebDriver) result.getTestContext().getAttribute("WebDriver");
         Object currentClass = result.getInstance ();
         WebDriver driver = ((BaseTest) currentClass).getDriver ();
-      // In case of returning RemoteWebDriver: Use Augmenter class to enhances the RemoteWebDriver by adding to it various interfaces including the TakesScreenshot interface.
-        driver = new Augmenter ().augment(driver);
+        // In case of returning RemoteWebDriver: Use Augmenter class to enhances the RemoteWebDriver by adding to it various interfaces including the TakesScreenshot interface.
+        driver = new Augmenter ().augment (driver);
         log.info ("Driver hashcode for screenshot " + driver.hashCode ());
-        String path = takeScreenshotDuringFailure (testName, result.getMethod ().getMethodName (), driver);
-        ExtentTest.get ().fail ("Failure Screenshot", MediaEntityBuilder.createScreenCaptureFromPath (path, result.getMethod ().getMethodName ()).build ());
-        ExtentTest.get ().log (Status.FAIL, "Test Failed");
-        ExtentTest.get ().fail (result.getThrowable ());
-    }
-
-    protected String takeScreenshotDuringFailure(String testName, String testMethodName, WebDriver driver) {
-        File scrFile = ((TakesScreenshot) driver).getScreenshotAs (OutputType.FILE);
         String path = System.getProperty ("user.dir")
                 + File.separator + File.separator + "test-output"
                 + File.separator + File.separator + "screenshots"
@@ -70,13 +63,24 @@ public class TestListener implements ITestListener {
                 + File.separator + File.separator + testName
                 + File.separator + File.separator + "onTestFail"
                 + File.separator + File.separator +
-                getSystemTime () + "-" + testMethodName + ".png";
+                getSystemTime () + "-" + result.getMethod ().getMethodName () + ".png";
+        File scrFile = takeScreenshotDuringFailure (path, driver);
+        ExtentTest.get ().fail ("Failure Screenshot", MediaEntityBuilder.createScreenCaptureFromPath (path, result.getMethod ().getMethodName ()).build ());
+        ExtentTest.get ().log (Status.FAIL, "Test Failed");
+        ExtentTest.get ().fail (result.getThrowable ());
+
+        //Attach screenshot to Reportportal
+        log.info ("RP_MESSAGE#FILE#{}#{}", scrFile.getAbsolutePath (), "Failure Screenshot");
+    }
+
+    private File takeScreenshotDuringFailure(String path, WebDriver driver) {
+        File scrFile = ((TakesScreenshot) driver).getScreenshotAs (OutputType.FILE);
         try {
             FileUtils.copyFile (scrFile, new File (path));
         } catch (IOException e) {
             e.printStackTrace ();
         }
-        return path;
+        return scrFile;
     }
 
 

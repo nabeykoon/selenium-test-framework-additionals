@@ -15,15 +15,6 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public class BrowserDriverFactory {
-    private String browser;
-    private Logger log;
-    private String os;
-    private String node;
-
-/*    public BrowserDriverFactory(String browser, Logger log) {
-        this.browser = browser.toLowerCase ();
-        this.log = log;
-    }*/
 
     public static WebDriver createDriver(String browser, Logger log) {
         // Create driver
