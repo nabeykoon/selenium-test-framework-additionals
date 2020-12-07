@@ -1,4 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.187 s - in TestSuite
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 39.473 s <<< FAILURE! - in TestSuite
+logInTest(com.webapp.loginpagetests.PositiveLogInTests)  Time elapsed: 8.123 s  <<< FAILURE!
+java.lang.AssertionError: 
+actualSuccessMessage does not contain expectedSuccessMessage
+expectedSuccessMessage: You logged into a seure area!
+actualSuccessMessage: You logged into a secure area!
+× expected [true] but found [false]
+	at com.webapp.loginpagetests.PositiveLogInTests.logInTest(PositiveLogInTests.java:54)
+

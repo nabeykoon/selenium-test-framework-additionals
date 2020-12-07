@@ -46,7 +46,7 @@ public class EyesManager {
     }
 
     public void validateElement(By locator) {
-        eyes.open(driver, "herokuapp", Thread.currentThread().getStackTrace()[2].getMethodName());
+        eyes.open(driver, "herokuapp", Thread.currentThread().getStackTrace()[2].getMethodName ());
         eyes.checkElement(locator);
         eyes.close();
     }

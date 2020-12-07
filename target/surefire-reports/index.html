@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,8 +39,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-EditorTestSuite" class="navigator-link">
-              <span class="suite-name border-passed">EditorTestSuite</span>
+            <a href="#" panel-name="suite-SmokeTestSuite" class="navigator-link">
+              <span class="suite-name border-failed">SmokeTestSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-EditorTestSuite" class="navigator-link ">
-                    <span>C:\Repos\selenium-test-framework-additionals\src\test\resources\TestSuites\SeperateTestSuites\EditorTestSuite.xml</span>
+                  <a href="#" panel-name="test-xml-SmokeTestSuite" class="navigator-link ">
+                    <span>C:\Repos\selenium-test-framework-additionals\src\test\resources\TestSuites\SmokeTestSuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-EditorTestSuite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                  <a href="#" panel-name="testlist-SmokeTestSuite" class="navigator-link ">
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-EditorTestSuite" class="navigator-link ">
+                  <a href="#" panel-name="group-SmokeTestSuite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-EditorTestSuite" class="navigator-link ">
+                  <a href="#" panel-name="times-SmokeTestSuite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-EditorTestSuite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-SmokeTestSuite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-EditorTestSuite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-SmokeTestSuite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-EditorTestSuite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-SmokeTestSuite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -93,21 +93,45 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-SmokeTestSuite" class="hide-methods failed suite-SmokeTestSuite"> (hide)</a> <!-- hide-methods failed suite-SmokeTestSuite -->
+                      <a href="#" panel-name="suite-SmokeTestSuite" class="show-methods failed suite-SmokeTestSuite"> (show)</a> <!-- show-methods failed suite-SmokeTestSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-SmokeTestSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SmokeTestSuite" title="com.webapp.loginpagetests.PositiveLogInTests" class="method navigator-link" hash-for-method="logInTest">logInTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-SmokeTestSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-EditorTestSuite" class="hide-methods passed suite-EditorTestSuite"> (hide)</a> <!-- hide-methods passed suite-EditorTestSuite -->
-                      <a href="#" panel-name="suite-EditorTestSuite" class="show-methods passed suite-EditorTestSuite"> (show)</a> <!-- show-methods passed suite-EditorTestSuite -->
+                      <a href="#" panel-name="suite-SmokeTestSuite" class="hide-methods passed suite-SmokeTestSuite"> (hide)</a> <!-- hide-methods passed suite-SmokeTestSuite -->
+                      <a href="#" panel-name="suite-SmokeTestSuite" class="show-methods passed suite-SmokeTestSuite"> (show)</a> <!-- show-methods passed suite-SmokeTestSuite -->
                     </span>
-                    <div class="method-list-content passed suite-EditorTestSuite">
+                    <div class="method-list-content passed suite-SmokeTestSuite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-EditorTestSuite" title="com.webapp.editortests.EditorTests" class="method navigator-link" hash-for-method="defaultEditorValueTest">defaultEditorValueTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-SmokeTestSuite" title="com.webapp.uploadtests.UploadTests" class="method navigator-link" hash-for-method="fileUploadTest(3, text.txt)">fileUploadTest(3, text.txt)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-EditorTestSuite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SmokeTestSuite" title="com.webapp.uploadtests.UploadTests" class="method navigator-link" hash-for-method="fileUploadTest(2, download.png)">fileUploadTest(2, download.png)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SmokeTestSuite" title="com.webapp.uploadtests.UploadTests" class="method navigator-link" hash-for-method="fileUploadTest(1, Intel-logo.jpg)">fileUploadTest(1, Intel-logo.jpg)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-SmokeTestSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -118,121 +142,238 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-EditorTestSuite" class="panel EditorTestSuite">
-          <div class="suite-EditorTestSuite-class-passed">
+        <div panel-name="suite-SmokeTestSuite" class="panel SmokeTestSuite">
+          <div class="suite-SmokeTestSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.webapp.editortests.EditorTests</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.webapp.loginpagetests.PositiveLogInTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="defaultEditorValueTest">
-                  </a> <!-- defaultEditorValueTest -->
-                  <span class="method-name">defaultEditorValueTest</span>
+                  <a name="logInTest">
+                  </a> <!-- logInTest -->
+                  <span class="method-name">logInTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: actualSuccessMessage does not contain expectedSuccessMessage
+expectedSuccessMessage: You logged into a seure area!
+actualSuccessMessage: You logged into a secure area!
+× expected [true] but found [false]
+	at com.webapp.loginpagetests.PositiveLogInTests.logInTest(PositiveLogInTests.java:54)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-EditorTestSuite-class-passed -->
-        </div> <!-- panel EditorTestSuite -->
-        <div panel-name="test-xml-EditorTestSuite" class="panel">
+          </div> <!-- suite-SmokeTestSuite-class-failed -->
+          <div class="suite-SmokeTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webapp.uploadtests.UploadTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="fileUploadTest(3, text.txt)">
+                  </a> <!-- fileUploadTest(3, text.txt) -->
+                  <span class="method-name">fileUploadTest</span>
+                  <span class="parameters">(3, text.txt)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="fileUploadTest(2, download.png)">
+                  </a> <!-- fileUploadTest(2, download.png) -->
+                  <span class="method-name">fileUploadTest</span>
+                  <span class="parameters">(2, download.png)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="fileUploadTest(1, Intel-logo.jpg)">
+                  </a> <!-- fileUploadTest(1, Intel-logo.jpg) -->
+                  <span class="method-name">fileUploadTest</span>
+                  <span class="parameters">(1, Intel-logo.jpg)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SmokeTestSuite-class-passed -->
+        </div> <!-- panel SmokeTestSuite -->
+        <div panel-name="test-xml-SmokeTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Repos\selenium-test-framework-additionals\src\test\resources\TestSuites\SeperateTestSuites\EditorTestSuite.xml</span>
+            <span class="header-content">C:\Repos\selenium-test-framework-additionals\src\test\resources\TestSuites\SmokeTestSuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;EditorTestSuite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;EditorTests&quot; verbose=&quot;0&quot;&gt;
+&lt;suite thread-count=&quot;8&quot; parallel=&quot;tests&quot; name=&quot;SmokeTestSuite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;8&quot; parallel=&quot;tests&quot; name=&quot;PositiveLogInTest123&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.webapp.editortests.EditorTests&quot;/&gt;
+      &lt;class name=&quot;com.webapp.loginpagetests.PositiveLogInTests&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- EditorTests --&gt;
-&lt;/suite&gt; &lt;!-- EditorTestSuite --&gt;
+  &lt;/test&gt; &lt;!-- PositiveLogInTest123 --&gt;
+  &lt;test thread-count=&quot;8&quot; parallel=&quot;tests&quot; name=&quot;UploadTests&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.webapp.uploadtests.UploadTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- UploadTests --&gt;
+&lt;/suite&gt; &lt;!-- SmokeTestSuite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-EditorTestSuite" class="panel">
+        <div panel-name="testlist-SmokeTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for EditorTestSuite</span>
+            <span class="header-content">Tests for SmokeTestSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">EditorTests (1 class)</span>
+                <span class="test-name">PositiveLogInTest123 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">UploadTests (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-EditorTestSuite" class="panel">
+        <div panel-name="group-SmokeTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for EditorTestSuite</span>
+            <span class="header-content">Groups for SmokeTestSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-EditorTestSuite" class="panel">
+        <div panel-name="times-SmokeTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for EditorTestSuite</span>
+            <span class="header-content">Times for SmokeTestSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_EditorTestSuite');
-function tableData_EditorTestSuite() {
+suiteTableInitFunctions.push('tableData_SmokeTestSuite');
+function tableData_SmokeTestSuite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'defaultEditorValueTest')
-data.setCell(0, 2, 'com.webapp.editortests.EditorTests')
-data.setCell(0, 3, 13729);
-window.suiteTableData['EditorTestSuite']= { tableData: data, tableDiv: 'times-div-EditorTestSuite'}
+data.setCell(0, 1, 'logInTest')
+data.setCell(0, 2, 'com.webapp.loginpagetests.PositiveLogInTests')
+data.setCell(0, 3, 7679);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'fileUploadTest')
+data.setCell(1, 2, 'com.webapp.uploadtests.UploadTests')
+data.setCell(1, 3, 7330);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'fileUploadTest')
+data.setCell(2, 2, 'com.webapp.uploadtests.UploadTests')
+data.setCell(2, 3, 6470);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'fileUploadTest')
+data.setCell(3, 2, 'com.webapp.uploadtests.UploadTests')
+data.setCell(3, 3, 5746);
+window.suiteTableData['SmokeTestSuite']= { tableData: data, tableDiv: 'times-div-SmokeTestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
-              <div id="times-div-EditorTestSuite">
-              </div> <!-- times-div-EditorTestSuite -->
+              <span class="suite-total-time">Total running time: 37 seconds</span>
+              <div id="times-div-SmokeTestSuite">
+              </div> <!-- times-div-SmokeTestSuite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-EditorTestSuite" class="panel">
+        <div panel-name="reporter-SmokeTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for EditorTestSuite</span>
+            <span class="header-content">Reporter output for SmokeTestSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-EditorTestSuite" class="panel">
+        <div panel-name="ignored-methods-SmokeTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-EditorTestSuite" class="panel">
+        <div panel-name="chronological-SmokeTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.webapp.editortests.EditorTests</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.webapp.loginpagetests.PositiveLogInTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(public void com.webapp.editortests.EditorTests.defaultEditorValueTest(), chrome, null, null, org.tes...)</span>
+                <span class="method-name">setUp(public void com.webapp.loginpagetests.PositiveLogInTests.logInTest(), chrome, null, null, org.testng...)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webapp.uploadtests.UploadTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.webapp.uploadtests.UploadTests.fileUploadTest(int,java.lang.String), chrome, null, n...)</span>
+                <span class="method-start">151 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webapp.loginpagetests.PositiveLogInTests</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">defaultEditorValueTest</span>
-                <span class="method-start">5692 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">logInTest</span>
+                <span class="method-start">5632 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webapp.uploadtests.UploadTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">fileUploadTest(1, Intel-logo.jpg)</span>
+                <span class="method-start">5641 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">19424 ms</span>
+                <span class="method-start">12978 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.webapp.uploadtests.UploadTests.fileUploadTest(int,java.lang.String), chrome, null, n...)</span>
+                <span class="method-start">13580 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webapp.loginpagetests.PositiveLogInTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">13770 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webapp.uploadtests.UploadTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">fileUploadTest(2, download.png)</span>
+                <span class="method-start">18756 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">25229 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.webapp.uploadtests.UploadTests.fileUploadTest(int,java.lang.String), chrome, null, n...)</span>
+                <span class="method-start">25827 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">fileUploadTest(3, text.txt)</span>
+                <span class="method-start">30989 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">36738 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

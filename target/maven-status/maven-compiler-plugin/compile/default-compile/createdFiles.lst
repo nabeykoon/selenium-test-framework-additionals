@@ -19,5 +19,6 @@ com\webapp\pages\WindowsPage.class
 com\webapp\pages\KeyPressesPage.class
 com\webapp\pages\FileUploaderPage.class
 com\webapp\base\EyesManager.class
+com\webapp\utils\TimeUtils.class
 com\webapp\base\TestUtilities.class
 com\webapp\base\BrowserDriverFactory.class

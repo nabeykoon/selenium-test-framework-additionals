@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-10-24T16:00:24 IST" name="EditorTestSuite" finished-at="2020-10-24T16:00:44 IST" duration-ms="20340">
+  <suite started-at="2020-12-08T00:58:45 IST" name="SmokeTestSuite" finished-at="2020-12-08T00:59:22 IST" duration-ms="37541">
     <groups>
     </groups>
-    <test started-at="2020-10-24T16:00:24 IST" name="EditorTests" finished-at="2020-10-24T16:00:44 IST" duration-ms="20340">
-      <class name="com.webapp.editortests.EditorTests">
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.webapp.editortests.EditorTests@7e9131d5]" started-at="2020-10-24T16:00:24 IST" name="setUp" finished-at="2020-10-24T16:00:30 IST" duration-ms="5691" status="PASS">
+    <test started-at="2020-12-08T00:58:45 IST" name="PositiveLogInTest123" finished-at="2020-12-08T00:58:59 IST" duration-ms="14593">
+      <class name="com.webapp.loginpagetests.PositiveLogInTests">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.webapp.loginpagetests.PositiveLogInTests@6a6afff2]" started-at="2020-12-08T00:58:45 IST" name="setUp" finished-at="2020-12-08T00:58:51 IST" duration-ms="5624" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.webapp.editortests.EditorTests.defaultEditorValueTest()]]>
+                <![CDATA[public void com.webapp.loginpagetests.PositiveLogInTests.logInTest()]]>
               </value>
             </param>
             <param index="1">
@@ -27,22 +27,209 @@
             </param>
             <param index="4">
               <value>
-                <![CDATA[org.testng.TestRunner@151ab2b9]]>
+                <![CDATA[org.testng.TestRunner@4c2869a9]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="defaultEditorValueTest()[pri:0, instance:com.webapp.editortests.EditorTests@7e9131d5]" started-at="2020-10-24T16:00:30 IST" name="defaultEditorValueTest" finished-at="2020-10-24T16:00:44 IST" duration-ms="13729" status="PASS">
+        <test-method signature="logInTest()[pri:0, instance:com.webapp.loginpagetests.PositiveLogInTests@6a6afff2]" started-at="2020-12-08T00:58:51 IST" name="logInTest" finished-at="2020-12-08T00:58:58 IST" duration-ms="7679" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[actualSuccessMessage does not contain expectedSuccessMessage
+expectedSuccessMessage: You logged into a seure area!
+actualSuccessMessage: You logged into a secure area!
+× expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: actualSuccessMessage does not contain expectedSuccessMessage
+expectedSuccessMessage: You logged into a seure area!
+actualSuccessMessage: You logged into a secure area!
+× expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at com.webapp.loginpagetests.PositiveLogInTests.logInTest(PositiveLogInTests.java:54)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- defaultEditorValueTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.webapp.editortests.EditorTests@7e9131d5]" started-at="2020-10-24T16:00:44 IST" name="tearDown" finished-at="2020-10-24T16:00:44 IST" duration-ms="598" status="PASS">
+        </test-method> <!-- logInTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.webapp.loginpagetests.PositiveLogInTests@6a6afff2]" started-at="2020-12-08T00:58:59 IST" name="tearDown" finished-at="2020-12-08T00:58:59 IST" duration-ms="627" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.webapp.editortests.EditorTests -->
-    </test> <!-- EditorTests -->
-  </suite> <!-- EditorTestSuite -->
+      </class> <!-- com.webapp.loginpagetests.PositiveLogInTests -->
+    </test> <!-- PositiveLogInTest123 -->
+    <test started-at="2020-12-08T00:58:45 IST" name="UploadTests" finished-at="2020-12-08T00:59:22 IST" duration-ms="37541">
+      <class name="com.webapp.uploadtests.UploadTests">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.webapp.uploadtests.UploadTests@5e4fa1da]" started-at="2020-12-08T00:58:45 IST" name="setUp" finished-at="2020-12-08T00:58:51 IST" duration-ms="5473" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.webapp.uploadtests.UploadTests.fileUploadTest(int,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+            <param index="3">
+              <value is-null="true"/>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[org.testng.TestRunner@6136998b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="fileUploadTest(int, java.lang.String)[pri:0, instance:com.webapp.uploadtests.UploadTests@5e4fa1da]" started-at="2020-12-08T00:58:51 IST" name="fileUploadTest" data-provider="files" finished-at="2020-12-08T00:58:58 IST" duration-ms="7330" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Intel-logo.jpg]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileUploadTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.webapp.uploadtests.UploadTests@5e4fa1da]" started-at="2020-12-08T00:58:58 IST" name="tearDown" finished-at="2020-12-08T00:58:59 IST" duration-ms="599" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.webapp.uploadtests.UploadTests@5e4fa1da]" started-at="2020-12-08T00:58:59 IST" name="setUp" finished-at="2020-12-08T00:59:04 IST" duration-ms="5174" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.webapp.uploadtests.UploadTests.fileUploadTest(int,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+            <param index="3">
+              <value is-null="true"/>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[org.testng.TestRunner@6136998b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="fileUploadTest(int, java.lang.String)[pri:0, instance:com.webapp.uploadtests.UploadTests@5e4fa1da]" started-at="2020-12-08T00:59:04 IST" name="fileUploadTest" data-provider="files" finished-at="2020-12-08T00:59:10 IST" duration-ms="6470" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[download.png]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileUploadTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.webapp.uploadtests.UploadTests@5e4fa1da]" started-at="2020-12-08T00:59:10 IST" name="tearDown" finished-at="2020-12-08T00:59:11 IST" duration-ms="596" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.webapp.uploadtests.UploadTests@5e4fa1da]" started-at="2020-12-08T00:59:11 IST" name="setUp" finished-at="2020-12-08T00:59:16 IST" duration-ms="5161" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.webapp.uploadtests.UploadTests.fileUploadTest(int,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+            <param index="3">
+              <value is-null="true"/>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[org.testng.TestRunner@6136998b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="fileUploadTest(int, java.lang.String)[pri:0, instance:com.webapp.uploadtests.UploadTests@5e4fa1da]" started-at="2020-12-08T00:59:16 IST" name="fileUploadTest" data-provider="files" finished-at="2020-12-08T00:59:22 IST" duration-ms="5746" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[text.txt]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileUploadTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.webapp.uploadtests.UploadTests@5e4fa1da]" started-at="2020-12-08T00:59:22 IST" name="tearDown" finished-at="2020-12-08T00:59:22 IST" duration-ms="610" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.webapp.uploadtests.UploadTests -->
+    </test> <!-- UploadTests -->
+  </suite> <!-- SmokeTestSuite -->
 </testng-results>

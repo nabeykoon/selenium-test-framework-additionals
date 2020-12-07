@@ -1,6 +1,5 @@
-00:29:52.305 [TestNG-PoolService-4] INFO  negativeLogInTest-CH - [Test negativeLogInTest passed]
-00:29:52.309 [TestNG-PoolService-4] INFO  negativeLogInTest-CH - Close driver
-00:29:52.833 [TestNG-tests-2] INFO  negativeLogInTest-FF - [ALL negativeLogInTest-FF FINISHED]
-00:29:53.014 [TestNG-PoolService-1] INFO  negativeLogInTest-CH - [Test negativeLogInTest passed]
-00:29:53.016 [TestNG-PoolService-1] INFO  negativeLogInTest-CH - Close driver
-00:29:53.728 [TestNG-tests-1] INFO  negativeLogInTest-CH - [ALL negativeLogInTest-CH FINISHED]
+01:10:26.042 [TestNG-PoolService-1] INFO  negativeLogInTest-FF - Close driver
+01:10:26.177 [TestNG-PoolService-0] INFO  negativeLogInTest-FF - [Test negativeLogInTest passed]
+01:10:26.178 [TestNG-PoolService-0] INFO  negativeLogInTest-FF - Close driver
+01:10:26.582 [TestNG-tests-1] INFO  negativeLogInTest-CH - [ALL negativeLogInTest-CH FINISHED]
+01:10:27.093 [TestNG-tests-2] INFO  negativeLogInTest-FF - [ALL negativeLogInTest-FF FINISHED]

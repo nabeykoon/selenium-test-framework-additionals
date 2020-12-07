@@ -1,0 +1,5 @@
+01:10:25.861 [TestNG-PoolService-3] INFO  negativeLogInTest-CH - [Test negativeLogInTest passed]
+01:10:25.866 [TestNG-PoolService-3] INFO  negativeLogInTest-CH - Close driver
+01:10:25.908 [TestNG-PoolService-4] INFO  negativeLogInTest-CH - [Test negativeLogInTest passed]
+01:10:25.909 [TestNG-PoolService-4] INFO  negativeLogInTest-CH - Close driver
+01:10:26.039 [TestNG-PoolService-1] INFO  negativeLogInTest-FF - RP_MESSAGE#FILE#C:\Users\nabey\AppData\Local\Temp\screenshot10443146919832966055.png#Failure Screenshot

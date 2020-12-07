@@ -8,11 +8,27 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">EditorTestSuite</th></tr>
-<tr><td><a href="#t0">EditorTests</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">20,340</td><td></td><td></td></tr>
+<tr><th colspan="8">SmokeTestSuite</th></tr>
+<tr><td><a href="#t0">PositiveLogInTest123</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">14,593</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">UploadTests</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">37,541</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">3</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">52,134</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">EditorTestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">EditorTests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.webapp.editortests.EditorTests</td><td><a href="#m0">defaultEditorValueTest</a></td><td rowspan="1">1603535430383</td><td rowspan="1">13729</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">SmokeTestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">PositiveLogInTest123 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.webapp.loginpagetests.PositiveLogInTests</td><td><a href="#m0">logInTest</a></td><td rowspan="1">1607369331205</td><td rowspan="1">7679</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">UploadTests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.webapp.uploadtests.UploadTests</td><td><a href="#m1">fileUploadTest</a></td><td rowspan="3">1607369356562</td><td rowspan="3">5746</td></tr><tr class="passedeven"><td><a href="#m2">fileUploadTest</a></td></tr><tr class="passedeven"><td><a href="#m3">fileUploadTest</a></td></tr></tbody>
 </table>
-<h2>EditorTests</h2><h3 id="m0">com.webapp.editortests.EditorTests#defaultEditorValueTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>PositiveLogInTest123</h2><h3 id="m0">com.webapp.loginpagetests.PositiveLogInTests#logInTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: actualSuccessMessage does not contain expectedSuccessMessage
+expectedSuccessMessage: You logged into a seure area!
+actualSuccessMessage: You logged into a secure area!
+× expected [true] but found [false]
+	at com.webapp.loginpagetests.PositiveLogInTests.logInTest(PositiveLogInTests.java:54)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>UploadTests</h2><h3 id="m1">com.webapp.uploadtests.UploadTests#fileUploadTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>3</td><td>text.txt</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.webapp.uploadtests.UploadTests#fileUploadTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>2</td><td>download.png</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.webapp.uploadtests.UploadTests#fileUploadTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>1</td><td>Intel-logo.jpg</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

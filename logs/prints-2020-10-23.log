@@ -1,7 +1,0 @@
-00:51:32.798 [main] INFO  selenium-test-framework - [TEST selenium-test-framework STARTED]
-00:51:32.823 [main] INFO  selenium-test-framework - Create driver: chrome
-01:13:33.161 [main] INFO  selenium-test-framework - [TEST selenium-test-framework STARTED]
-01:13:33.184 [main] INFO  selenium-test-framework - Create driver: chrome
-01:13:38.782 [main] INFO  selenium-test-framework - [Starting verifyPDF]
-01:13:49.372 [main] INFO  selenium-test-framework - [Test verifyPDF passed]
-01:13:49.374 [main] INFO  selenium-test-framework - Close driver

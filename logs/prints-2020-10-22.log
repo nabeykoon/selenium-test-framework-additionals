@@ -1,5 +1,0 @@
-01:30:15.964 [jersey-client-async-executor-0] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager is shutting down
-01:30:15.965 [jersey-client-async-executor-0] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager shut down
-01:30:20.969 [main] INFO  selenium-test-framework - [ALL selenium-test-framework FINISHED]
-00:51:21.444 [main] INFO  selenium-test-framework - [TEST selenium-test-framework STARTED]
-00:51:21.469 [main] INFO  selenium-test-framework - Create driver: chrome

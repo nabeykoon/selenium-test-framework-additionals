@@ -1,5 +1,0 @@
-23:55:59.433 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager is shutting down
-23:55:59.437 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager shut down
-23:55:59.501 [main] INFO  selenium-test-framework - Text from TinyMCE WYSIWYG Editor: Your content goes here.
-23:55:59.504 [main] INFO  selenium-test-framework - [Test defaultEditorValueTest passed]
-23:55:59.506 [main] INFO  selenium-test-framework - Close driver
