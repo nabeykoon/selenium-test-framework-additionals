@@ -40,7 +40,7 @@ public class AlertsTests extends TestUtilities {
 
         // 2 - Result text is expected
         Assert.assertTrue (result.equals ("You successfuly clicked an alert"),
-                "result is not expected. \nShould be 'You successfuly clicked an alert', but it is '" + result + "'");
+                "result is not expected. \nShould be 'You successfully clicked an alert', but it is '" + result + "'");
     }
 
     @Test

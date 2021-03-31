@@ -1,0 +1,5 @@
+16:56:53.453 [main] INFO  selenium-test-framework - [Test TestAccessibilityWithWebElement failed]
+16:56:53.489 [main] INFO  selenium-test-framework - Driver hashcode for screenshot 1019831085
+16:56:54.360 [main] INFO  selenium-test-framework - RP_MESSAGE#FILE#C:\Users\NADEER~1.ABE\AppData\Local\Temp\screenshot2990021078045575678.png#Failure Screenshot
+16:56:54.372 [main] INFO  selenium-test-framework - Close driver
+16:56:55.249 [main] INFO  selenium-test-framework - [ALL selenium-test-framework FINISHED]
