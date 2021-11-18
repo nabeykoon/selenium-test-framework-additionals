@@ -1,6 +1,4 @@
-16:58:43.875 [main] INFO  selenium-test-framework - [TEST selenium-test-framework STARTED]
-16:58:44.001 [main] INFO  selenium-test-framework - Create driver: chrome
-16:58:50.340 [main] INFO  selenium-test-framework - [Starting TestAccessibilityWithWebElement]
-16:58:54.277 [main] INFO  selenium-test-framework - [Test TestAccessibilityWithWebElement passed]
-16:58:54.287 [main] INFO  selenium-test-framework - Close driver
-16:58:55.344 [main] INFO  selenium-test-framework - [ALL selenium-test-framework FINISHED]
+22:49:59.854 [main] INFO  selenium-test-framework-additionals - Driver hashcode for screenshot 1043154163
+22:50:00.097 [main] INFO  selenium-test-framework-additionals - RP_MESSAGE#FILE#C:\Users\Nadeera\AppData\Local\Temp\screenshot15366013724586937702.png#Failure Screenshot
+22:50:00.103 [main] INFO  selenium-test-framework-additionals - Close driver
+22:50:00.764 [main] INFO  selenium-test-framework-additionals - [ALL selenium-test-framework-additionals FINISHED]

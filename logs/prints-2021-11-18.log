@@ -1,0 +1,6 @@
+22:49:49.732 [main] INFO  selenium-test-framework-additionals - [Starting TestAccessibilityWithWebElement]
+22:49:52.532 [main] INFO  selenium-test-framework-additionals - [Test TestAccessibilityWithWebElement passed]
+22:49:52.533 [main] INFO  selenium-test-framework-additionals - Close driver
+22:49:53.175 [main] INFO  selenium-test-framework-additionals - Create driver: chrome
+22:49:57.079 [main] INFO  selenium-test-framework-additionals - [Starting herokuAppA11yTest]
+22:49:59.848 [main] INFO  selenium-test-framework-additionals - [Test herokuAppA11yTest failed]
